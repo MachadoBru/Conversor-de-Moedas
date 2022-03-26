@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Conversor de moedas - BruMachado </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <h1 class="page-title">Conversor de moedas</h1>
+  <p class="page-subtitle">Obtenha valores em Dólar, Euro, Libra Esterlina ou Bitcoin convertidos em Real</p>
+  <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
+  <label for="converterMoeda">Selecione a moeda a ser convertida | Insira o valor | Obtenha o valor em Real</label><br>
+  <select name="Moeda" id="moedaSelecionada">
+    <optgroup>
+      <option value="dolar" id="dolar">Dólar (US$)</option>
+      <option value="euro" id="euro">Euro (€)</option>
+      <option value="libra" id="libra">Libra Esterlina (£)</option>
+      <option value="Bitcoin" id="bitcoin">Bitcoin (₿)</option>
+    </optgroup>
+    <input type=number name="valor" id="valormoeda" size=1 </input>
+    <button type="submit" onclick="Converter()"> Converter</button>
+    <h2 class="resultado" id="resultadoFinal"></h2>
+</div>
+<img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
